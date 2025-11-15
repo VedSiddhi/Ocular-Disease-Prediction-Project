@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon"
+    href="https://ik.imagekit.io/pcpeetp69/ChatGPT%20Image%20Jun%208,%202025,%2005_24_34%20PM.png?updatedAt=1749387925564"
+    type="image/png">
+  <title>Optain Health - AI-Enabled Healthcare Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Check if user is logged in
+    window.onload = function () {
+      if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.href = '../log.html';
+      }
+    }
+
+    // Logout function
+    function logout() {
+      sessionStorage.removeItem('isLoggedIn');
+      window.location.href = '../log.html';
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="https://ik.imagekit.io/pcpeetp69/ChatGPT%20Image%20Jun%208,%202025,%2005_24_34%20PM.png?updatedAt=1749387925564"
+          alt="Optain Logo" style="width: 120px; height: auto;" onerror="this.style.display='none'">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="eyetelligence-assure.html">Eyetelligence Assure</a></li>
+        <li><a href="science.html">Science</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" onclick="logout()" style="color: #ff4444;"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Revolutionizing Healthcare with AI Solutions</h1>
+      <p>Built to support doctors and healthcare workers in early disease detection.</p>
+      <a href="#upload" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Image Upload Section -->
+  <section id="upload" class="upload-section">
+    <div class="upload-container" data-aos="fade-up">
+      <h2 style="text-align:center;">AI Eye Disease Screening Tool</h2>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://aaryakelkar11-fybtech-project.hf.space" class="cta-button"
+          style="padding: 12px 24px; background-color: #2563eb; color: white; border-radius: 8px; text-decoration: none; font-weight: bold;">
+          Open AI Screening Tool
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Non-Invasive, Real-Time, <span
+          class="text-primary-600">Proven</span></h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center" data-aos="fade-right" data-aos-delay="100">
+          <div class="mx-auto mb-6 rounded-lg shadow-lg bg-gray-200 h-48 flex items-center justify-center">
+            <i class="fas fa-eye text-4xl text-gray-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Providers take retinal images using the camera</h3>
+        </div>
+
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="mx-auto mb-6 rounded-lg shadow-lg bg-gray-200 h-48 flex items-center justify-center">
+            <i class="fas fa-brain text-4xl text-gray-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Optain's AI algorithms immediately analyze images</h3>
+        </div>
+
+        <div class="text-center" data-aos="fade-left" data-aos-delay="300">
+          <div class="mx-auto mb-6 rounded-lg shadow-lg bg-gray-200 h-48 flex items-center justify-center">
+            <i class="fas fa-file-medical text-4xl text-gray-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Generate risk assessment reports on various health conditions</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="eyetelligence">
+    <div class="feature-container">
+      <h2 data-aos="fade-up">Eyetelligence Assure Software & Camera</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Optain's AI-enabled Software as a Medical Device (SaMD) and Portable
+        Automatic Fundus Camera Turnkey Solution</p>
+      <div class="feature-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-brain"></i>
+          <h3>AI-Powered Analysis</h3>
+          <p>Detect glaucoma, diabetic retinopathy, AMD, and cardiovascular disease risk with 95% accuracy</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Secure & Reliable</h3>
+          <p>Local AWS deployment ensures superior security and privacy</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-heartbeat"></i>
+          <h3>Comprehensive Care</h3>
+          <p>Non-invasive early detection for both eye diseases and cardiovascular risks</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="500">
+        <a href="eyetelligence-assure.html" class="cta-button">Learn More About Eyetelligence Assure</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits py-20 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Elevating Health</h2>
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="benefit-card" data-aos="fade-right" data-aos-delay="100">
+          <div class="w-full h-64 bg-gray-200 rounded-lg shadow-lg mb-6 flex items-center justify-center">
+            <i class="fas fa-user-md text-4xl text-gray-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">For Providers</h3>
+          <p>Create an accurate assessment of patient health to minimize missed diagnoses and standardize care
+            recommendations.</p>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-full h-64 bg-gray-200 rounded-lg shadow-lg mb-6 flex items-center justify-center">
+            <i class="fas fa-user text-4xl text-gray-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">For Patients</h3>
+          <p>Receive extensive, AI-enabled, accurate reports to better understand your eye and whole-body health.</p>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-left" data-aos-delay="300">
+          <div class="w-full h-64 bg-gray-200 rounded-lg shadow-lg mb-6 flex items-center justify-center">
+            <i class="fas fa-building text-4xl text-gray-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">For Insurers</h3>
+          <p>Screen, risk stratify, and detect eye and chronic diseases in member populations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer Section -->
+  <section class="flex justify-center items-center py-8 px-4 bg-blue-50">
+    <div
+      class="max-w-2xl w-full border-2 border-blue-400 bg-blue-100 rounded-xl shadow-lg p-6 flex items-center gap-4 animate__animated animate__pulse"
+      data-aos="zoom-in" data-aos-delay="100">
+      <i class="fas fa-lightbulb text-yellow-500 text-3xl"></i>
+      <div>
+        <h2 class="text-2xl font-bold text-black-700 mb-2">Remember</h2>
+        <p class="text-black-800 font-medium">
+          This AI tool is intended for screening support only. It does not replace clinical diagnosis. Always consult a
+          qualified ophthalmologist for medical advice and treatment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Partners & Affiliates</h2>
+      <div class="flex justify-center items-center flex-wrap gap-12">
+        <div class="h-16 w-32 bg-gray-200 flex items-center justify-center">
+          <span class="text-gray-400">Northwell Health</span>
+        </div>
+        <div class="h-16 w-32 bg-gray-200 flex items-center justify-center">
+          <span class="text-gray-400">Aegis</span>
+        </div>
+        <div class="h-16 w-32 bg-gray-200 flex items-center justify-center">
+          <span class="text-gray-400">Ascertain</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section" data-aos="fade-right" data-aos-delay="100">
+        <h3>Optain</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="eyetelligence-assure.html">Eyetelligence Assure</a></li>
+          <li><a href="science.html">Science</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section" data-aos="fade-left" data-aos-delay="200">
+        <h3>Partners & Affiliates</h3>
+        <ul>
+          <li>Northwell Health</li>
+          <li>Aegis Ventures</li>
+          <li>Ascertain</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom" data-aos="fade-up" data-aos-delay="300">
+      <p>&copy; 2024 Optain Health. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Check if user is logged in
+    window.onload = function () {
+      if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.href = '../log.html';
+      }
+    }
+
+    // Logout function
+    function logout() {
+      sessionStorage.removeItem('isLoggedIn');
+      window.location.href = '../log.html';
+    }
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

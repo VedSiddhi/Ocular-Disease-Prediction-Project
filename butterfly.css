@@ -1,0 +1,38 @@
+/* Butterfly Animation Styles */
+.butterfly-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(45deg, #1a1a1a, #4a4a4a);
+}
+
+.butterfly {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    clip-path: path("M10 0 C15 10 20 0 10 20 C0 0 5 10 10 0");
+    animation: fly var(--duration) ease-in-out infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(var(--start-x), var(--start-y)) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(calc(var(--start-x) + 100px), calc(var(--start-y) - 50px)) rotate(45deg) scale(1.2);
+    }
+    50% {
+        transform: translate(calc(var(--start-x) + 200px), var(--start-y)) rotate(90deg) scale(1);
+    }
+    75% {
+        transform: translate(calc(var(--start-x) + 100px), calc(var(--start-y) + 50px)) rotate(45deg) scale(1.2);
+    }
+    100% {
+        transform: translate(var(--start-x), var(--start-y)) rotate(0deg) scale(1);
+    }
+} 
